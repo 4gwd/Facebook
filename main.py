@@ -29,7 +29,7 @@ def TamTa(call):
         vm+=1
         phn = ['78', '77', '75']
         nmp = ''.join(random.choice(string.digits) for _ in range(7))
-	codo = str(''.join(random.choice(phn)for i in range(1)))
+	codo = ''.join(random.choice(phn)for i in range(1))
         user = '+964'+codo+nmp
         ps= nmp
         FB = Start(phone=user, password=ps)
