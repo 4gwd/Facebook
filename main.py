@@ -28,7 +28,7 @@ def TamTa(call):
     while True:
         vm+=1
         phn = ['78', '77', '75']
-        nmp = ''.join(random.choice(string.digits) for _ in range(7))
+        nmp = ''.join(random.choice(string.digits) for _ in range(8))
         codo = ''.join(random.choice(phn)for i in range(1))
         user = '+964'+codo+nmp
         ps= '0'+codo+nmp
