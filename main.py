@@ -1,5 +1,6 @@
 import os
 os.system('pip install FBlevi')
+os.system('pip install pyotp')
 try:
 	from time import sleep
 	import telebot
