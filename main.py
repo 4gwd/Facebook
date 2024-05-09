@@ -31,7 +31,7 @@ def TamTa(call):
         nmp = ''.join(random.choice(string.digits) for _ in range(7))
         codo = ''.join(random.choice(phn)for i in range(1))
         user = '+964'+codo+nmp
-        ps = '0'+phn+nmp
+        ps='0'+phn+nmp
         FB = Start(phone=user, password=ps)
         if FB.IsValid:
             good += 1
