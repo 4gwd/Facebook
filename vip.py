@@ -21,7 +21,7 @@ print(C+k)
 print(Z+lo)
 print(X+i)
 ido = "-1001840965165"
-tokno = "6779842121:AAGGVAb0kvFT6pZYDTA7c_gR9z6RGbBQpIU"
+tokno = "5088805170:AAEQz1VIE7bMwtDQbR_TBNU5yQo762P8Skk"
 os.system('clear')
 print(Z+logo)
 print(C+k)
